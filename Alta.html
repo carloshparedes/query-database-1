@@ -1,0 +1,36 @@
+<!DOCTYPE >
+<html>
+  <head> </head>
+  <body>
+    <form action="Alta.php" method="post">
+      <label><h1>Ingrese los valores requeridos</h1></label><br />
+      <label>Nombre</label>
+      <input type="text" name="nombre" /> <br />
+      <label>Apellidos</label>
+      <input type="text" name="apellidos" /> <br />
+      <label>Estas dado de alta</label> <br />
+      <label>Si</label>
+      <input
+        id="si"
+        type="checkbox"
+        name="alta"
+        value="1"
+        onclick="document.getElementById('no').checked=false;"
+        checked
+      />
+      <label>No</label>
+      <input
+        id="no"
+        type="checkbox"
+        name="alta"
+        value="0"
+        onclick="document.getElementById('si').checked=false;"
+      />
+      <br />
+      <label>Fecha</label>
+      <input type="date" name="fecha" id="" /> <br /><br />
+      <input type="submit" value="ENVIAR" />
+      <input type="submit" value="CANCELAR" onclick="listado.php" />
+    </form>
+  </body>
+</html>
